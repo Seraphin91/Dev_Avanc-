@@ -1,4 +1,4 @@
-Cours 1 :
+# Cours 1 :
 
 # Vréation de la première version du workflow et implémentation de la Branche YouTube (Protocole oEmbed)
 
@@ -12,7 +12,7 @@ Mon objectif dans mon groupe est de récupérer automatiquement le titre et le n
 4. **Intégration Notion :** Injection de la variable `title` (Titre Notion), de l'URL source, et de la variable `author_name` (Nom de la chaîne) dans la case "Résumé".
 
 
-* Cours 2 :
+# Cours 2 :
 
 # Ajout d'infos pour la partie youtube et intégration du markdown
 
