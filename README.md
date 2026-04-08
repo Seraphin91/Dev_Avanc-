@@ -14,6 +14,8 @@ Mon objectif dans mon groupe est de récupérer automatiquement le titre et le n
 
 * Cours 2 :
 
+# Ajout d'infos pou youtube et intégration de markdown
+
 ## Objectif
 Mon objectif dans mon groupe est de récupérer automatiquement la dexcription et sous-titre d'une vidéo pour compléter les données et les transfromer en markdown.
 
