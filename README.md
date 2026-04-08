@@ -19,4 +19,4 @@ Mon objectif dans mon groupe est de récupérer automatiquement la dexcription e
 
 ## Fonctionnement Technique que j'ai implémenté
 * Avec Ezno, on a changé le protcolme oEmbed par le noeud Youtube afin de récupérer plus d'infos que nous n'avions pas avant, comme les sous-titres et la description. On réléchit à peut-être intégré un agent IA pour le markdown.
-* 
+* On stock le fichier markdown sur notion une fois traité
