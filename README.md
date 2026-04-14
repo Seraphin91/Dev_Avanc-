@@ -16,7 +16,7 @@ Mon objectif dans mon groupe est de récupérer automatiquement le titre et le n
 
 Objectif : Récupérer des fichiers que l'on transforme au format markdown, les diviser en chunks de données et les enregistrer
 
-**Ce que j'ai fait :** J'ai créé le noeud de "Standardisation". Mon travail était de prendre les données brutes (surtout les CSV) et de tout transformer en un format Markdown unique et propre pour la suite.
+**Ce que j'ai fait :** J'ai créé deux noeuds de extract. Le premier permet de prendre les données brutes en CSV  de tout transformer en un format Markdown propre pour la suite et l'enregistrer dans le google docs. J'ai égfalement mis en place la récupération de fichier déjà transformé en markdown pour les enregistré. 
 
 **Comment j'ai fait ça :**
 
@@ -24,6 +24,8 @@ Objectif : Récupérer des fichiers que l'on transforme au format markdown, les 
 
 **Le Script :** J'ai écrit un code en JavaScript qui rassemble toutes les lignes du tableau et les transforme en un seul gros document texte, avec un titre ## pour chaque ligne.
 
+**Les fichiers Markdown** J'ai utilisé le noeud "Extract from Markdown" pour lire le fichier déjà transformer.
+
 **Les galères que j'ai dû régler :**
 
-**L'agrégation des données :** Le gros problème avec le CSV, c'est que n8n sort 50 éléments différents s'il y a 50 lignes. J'ai dû coder une boucle pour fusionner ces 50 lignes en un seul grand texte avant de l'envoyer pour le découpage final.
+**L'agrégation des données :** Le gros problème avec le CSV, c'est que n8n sort 50 éléments différents s'il y a 50 lignes. J'ai dû coder une boucle pour fusionner ces 50 lignes en un seul grand texte avant de l'envoyer pour le découpage final. Il fallait également penser à diviser les données Markdown en chunk pour la suite.
