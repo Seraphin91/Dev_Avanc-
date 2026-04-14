@@ -14,11 +14,16 @@ Mon objectif dans mon groupe est de récupérer automatiquement le titre et le n
 
 # Cours 2 :
 
-# Ajout d'infos pour la partie youtube et intégration du markdown
+Objectif : Récupérer des fichiers que l'on transforme au format markdown, les diviser en chunks de données et les enregistrer
 
-## Objectif
-Mon objectif dans mon groupe est de récupérer automatiquement la dexcription et sous-titre d'une vidéo pour compléter les données et les transfromer en markdown.
+**Ce que j'ai fait :** J'ai créé le noeud de "Standardisation". Mon travail était de prendre les données brutes (surtout les CSV) et de tout transformer en un format Markdown unique et propre pour la suite.
 
-## Fonctionnement Technique que j'ai implémenté
-* Avec Ezno, on a changé le protcolme oEmbed par le noeud Youtube afin de récupérer plus d'infos que nous n'avions pas avant, comme les sous-titres et la description. On réléchit à peut-être intégré un agent IA pour le markdown.
-* On stock le fichier markdown sur notion une fois traité
+**Comment j'ai fait ça :**
+
+**Le CSV :** J'ai utilisé le noeud "Extract from CSV" pour lire les tableaux ligne par ligne.
+
+**Le Script :** J'ai écrit un code en JavaScript qui rassemble toutes les lignes du tableau et les transforme en un seul gros document texte, avec un titre ## pour chaque ligne.
+
+**Les galères que j'ai dû régler :**
+
+**L'agrégation des données :** Le gros problème avec le CSV, c'est que n8n sort 50 éléments différents s'il y a 50 lignes. J'ai dû coder une boucle pour fusionner ces 50 lignes en un seul grand texte avant de l'envoyer pour le découpage final.
