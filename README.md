@@ -29,3 +29,11 @@ Objectif : Récupérer des fichiers que l'on transforme au format markdown, les 
 **Les galères que j'ai dû régler :**
 
 **L'agrégation des données :** Le gros problème avec le CSV, c'est que n8n sort 50 éléments différents s'il y a 50 lignes. J'ai dû coder une boucle pour fusionner ces 50 lignes en un seul grand texte avant de l'envoyer pour le découpage final. Il fallait également penser à diviser les données Markdown en chunk pour la suite.
+
+# Cours 3 :
+
+Objectif : Récupérer les chunks que l'on a créé dans le cours 2, les enregeistrer dans une base vectoriel VVS et refonte de la transformation de fichier en Markdown avec des github publique pour être plus éfficace et interprétation des données avec un autre workflow.
+
+Contexte : On utilise l'ia Gemini pour la vectorisation des données
+
+**L'agrégation des données :** Assez compliqué de réussir a correctment vectorisé le données
