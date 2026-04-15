@@ -16,7 +16,7 @@ Mon objectif dans mon groupe est de récupérer automatiquement le titre et le n
 
 Objectif : Récupérer des fichiers que l'on transforme au format markdown, les diviser en chunks de données et les enregistrer
 
-**Ce que j'ai fait :** J'ai créé deux noeuds de extract. Le premier permet de prendre les données brutes en CSV  de tout transformer en un format Markdown propre pour la suite et l'enregistrer dans le google docs. J'ai égfalement mis en place la récupération de fichier déjà transformé en markdown pour les enregistré. 
+**Ce que j'ai fait :** J'ai créé deux noeuds de extract. Le premier permet de prendre les données brutes en CSV  de tout transformer en un format Markdown propre pour la suite et l'enregistrer dans le google docs. J'ai également mis en place la récupération de fichiers déjà transformés en markdown pour les enregistrer. 
 
 **Comment j'ai fait ça :**
 
