@@ -37,3 +37,13 @@ Objectif : Récupérer les chunks que l'on a créé dans le cours 2, les enregei
 Contexte : On utilise l'ia Gemini pour la vectorisation des données
 
 **L'agrégation des données :** Assez compliqué de réussir a correctment vectorisé le données
+
+Chez moi, j'ai travaillé sur le stockage Vectoriel avec Weaviate & Gemini Embeddings
+
+Une fois les chunks propres et structurés fait par mes camardes dans le worflow, il faut les transformer en vecteurs mathématiques (Embeddings) pour permettre la recherche sémantique par le chat bot et le stocké dans la base vectoriel
+
+Nous avons déployé une instance **Weaviate** en local via Docker sur n8n pour le stockage. Notre choix est motivé par sa légèreté, sa rapidité et son intégration native parfaite avec n8n.
+
+Pour le modèle d'Embedding, comme expliqué au dessus nous avons utilisé l'API Google avec le modèle `models/embedding-001`.
+
+Le pipeline d'ingestion est configuré pour dissocier strictement le contenu textuel (`pageContent`) des métadonnées (`ID`, `source`). Cette approche garantit que seule la donnée utile est vectorisée, optimisant ainsi la précision des calculs et réduisant la consommation de tokens, tout en conservant une traçabilité totale sur l'origine des documents.
