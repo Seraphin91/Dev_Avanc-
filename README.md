@@ -40,9 +40,9 @@ Contexte : On utilise l'ia Gemini pour la vectorisation des données
 
 Chez moi, j'ai travaillé sur le stockage Vectoriel avec Weaviate & Gemini Embeddings
 
-Une fois les chunks propres et structurés fait par mes camardes dans le worflow, il faut les transformer en vecteurs mathématiques (Embeddings) pour permettre la recherche sémantique par le chat bot et le stocké dans la base vectoriel
+Une fois les chunks propres et structurés faits par mes camardes dans le workflow, il faut les transformer en vecteurs mathématiques (Embeddings) pour permettre la recherche sémantique par le chat bot et les stocker dans la base vectorielle
 
-Nous avons déployé une instance **Weaviate** en local via Docker sur n8n pour le stockage. Notre choix est motivé par sa légèreté, sa rapidité et son intégration native parfaite avec n8n.
+Nous avons déployé une instance **Weaviate** en local via Docker sur n8n pour le stockage. Nous avons choisi Weaviats pour sa légèreté, sa rapidité et son intégration native parfaite avec n8n.
 
 Pour le modèle d'Embedding, comme expliqué au dessus nous avons utilisé l'API Google avec le modèle `models/embedding-001`.
 
