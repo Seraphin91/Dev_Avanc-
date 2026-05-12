@@ -47,3 +47,16 @@ Nous avons déployé une instance **Weaviate** en local via Docker sur n8n pour 
 Pour le modèle d'Embedding, comme expliqué au dessus nous avons utilisé l'API Google avec le modèle `models/embedding-001`.
 
 Le pipeline d'ingestion est configuré pour dissocier strictement le contenu textuel (`pageContent`) des métadonnées (`ID`, `source`). Cette approche garantit que seule la donnée utile est vectorisée, optimisant ainsi la précision des calculs et réduisant la consommation de tokens, tout en conservant une traçabilité totale sur l'origine des documents.
+
+# Cours 4 :
+
+Ce que j'ai fait :
+J'ai intégré le noeud Agent IA qui a permis de connecter un modéle d'IA au workflow pour répondre aux différentes questions qu'on lui pose par rapport à notre BD et le serveur MCP.
+
+Comment je l'ai fait :
+
+J'ai ajouté le noeud Agent IA auquel j'ai attaché plusieurs noeuds : Gemini Chat Model et MCP Client Server
+Sur le noeud Gemini Chat Model, j'ai ajouté les credentials Google pour se connecter au modèle.
+Sur le noeud MCP Client Server, j'ai précisé l'adresse IP vers le serveur MCP.
+
+Je n'ai pas rencontré de difficultés à ajouter ces noeuds.
